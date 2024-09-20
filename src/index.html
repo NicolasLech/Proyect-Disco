@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar</title>
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/12c6af079b.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-cyan-200/30">
+    
+    <div class="bg-white w-64 h-screen flex flex-col justify-start">
+
+    <div class="flex-grow">
+
+        
+        <div>
+            <div class="flex items-center border-b-2 border-black">
+                <img src="./assets/logo.png" alt="Chayanne.png" class="w-14 h-14 mx-3 my-3">
+                <span class="text-3xl font-medium">Chayanne</span>
+            </div>
+        </div>
+
+        
+        <div> 
+            <ul>
+                <li>
+                    <a href="#" class="flex items-center mt-3 ml-3 gap-5">
+                        <img src="./assets/icons8-casa-48.png" alt="House">
+                        <span class="text-3xl">Inicio</span>
+                    </a>
+                </li>
+                <li id="dropdownButton">
+
+                    <a href="#"
+                    onclick="toggleDropdown()"
+                    class="flex items-center mt-3 ml-3 gap-5">
+
+                        <img src="./assets/icons8-carpeta-48.png" alt="Folder">
+                            <span class="flex-grow text-3xl">Album</span>
+                        <img src="./assets/icons8-expand-arrow-48.png" alt="Arrow" class="transition-transform" data-row>
+
+                    </a>
+
+                    <ul
+                    id="dropdown"
+                    class="ml-[67px] mr-[81px] border-l border-l-black hidden">
+                        <li>
+                            <a href="#" class="flex pl-3 py-1 hover:bg-gray-950/10">
+                                <span class="text-xl">Sincero</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="#" class="flex items-center mt-3 ml-3 gap-5">
+                        <img src="./assets/icons8-agregar-carpeta-48.png" alt="AddFolder">
+                        <span class="text-3xl">AddAlbum</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center mt-3 ml-3 gap-5">
+                        <img src="./assets/icons8-edit-folder-48.png" alt="EditAlbum">
+                        <span class="text-3xl">EditAlbum</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+        <div>
+            <a href="#" class="flex items-center my-3 mx-10 gap-3">
+                <img src="./assets/icons8-accede-redondeado-derecho-48.png" alt="Login">
+                <span class="text-3xl">Login</span>
+            </a>
+        </div>
+
+    </div>
+
+
+    <script>
+        function toggleDropdown(){
+            let dropdown = document.querySelector('#dropdownButton #dropdown');
+            dropdown.classList.toggle("hidden");
+
+
+        }
+
+        
+
+    </script>
+
+
+    <script src="./js/app.js" defer></script>
+</body>
+</html>
