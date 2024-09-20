@@ -593,6 +593,10 @@ video {
   margin-left: 0.75rem;
 }
 
+.ml-8 {
+  margin-left: 2rem;
+}
+
 .ml-\[67px\] {
   margin-left: 67px;
 }
@@ -607,6 +611,10 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .flex {
@@ -633,36 +641,24 @@ video {
   height: 1rem;
 }
 
-.h-\[20px\] {
-  height: 20px;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.h-\[55px\] {
-  height: 55px;
-}
-
-.h-\[65px\] {
-  height: 65px;
+.h-\[24px\] {
+  height: 24px;
 }
 
 .h-\[80px\] {
   height: 80px;
 }
 
-.h-\[85px\] {
-  height: 85px;
+.h-screen {
+  height: 100vh;
 }
 
-.h-\[40px\] {
-  height: 40px;
+.h-\[65px\] {
+  height: 65px;
 }
 
-.h-\[100px\] {
-  height: 100px;
+.h-\[50px\] {
+  height: 50px;
 }
 
 .w-14 {
@@ -677,52 +673,112 @@ video {
   width: 16rem;
 }
 
-.w-\[115px\] {
-  width: 115px;
+.w-\[133px\] {
+  width: 133px;
 }
 
-.w-\[55px\] {
-  width: 55px;
+.w-\[139\] {
+  width: 139;
+}
+
+.w-\[24px\] {
+  width: 24px;
 }
 
 .w-\[80px\] {
   width: 80px;
 }
 
-.w-\[90px\] {
-  width: 90px;
-}
-
-.w-\[96px\] {
-  width: 96px;
-}
-
 .w-full {
   width: 100%;
+}
+
+.w-\[139px\] {
+  width: 139px;
+}
+
+.w-\[131px\] {
+  width: 131px;
+}
+
+.w-\[138px\] {
+  width: 138px;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[130px\] {
+  width: 130px;
+}
+
+.w-\[115px\] {
+  width: 115px;
+}
+
+.w-\[1px\] {
+  width: 1px;
+}
+
+.w-\[105px\] {
+  width: 105px;
+}
+
+.w-\[102px\] {
+  width: 102px;
+}
+
+.w-\[104px\] {
+  width: 104px;
+}
+
+.w-\[103px\] {
+  width: 103px;
+}
+
+.w-\[127px\] {
+  width: 127px;
+}
+
+.w-\[128px\] {
+  width: 128px;
+}
+
+.w-\[137px\] {
+  width: 137px;
+}
+
+.w-\[13px\] {
+  width: 13px;
+}
+
+.w-\[136px\] {
+  width: 136px;
+}
+
+.w-\[135px\] {
+  width: 135px;
+}
+
+.w-\[134px\] {
+  width: 134px;
+}
+
+.w-\[129px\] {
+  width: 129px;
 }
 
 .w-\[65px\] {
   width: 65px;
 }
 
-.w-\[85px\] {
-  width: 85px;
+.w-6 {
+  width: 1.5rem;
 }
 
-.w-\[px\] {
-  width: px;
-}
-
-.w-\[70px\] {
-  width: 70px;
-}
-
-.w-\[95px\] {
-  width: 95px;
-}
-
-.w-\[100px\] {
-  width: 100px;
+.w-\[50px\] {
+  width: 50px;
 }
 
 .max-w-md {
@@ -765,6 +821,12 @@ video {
   gap: 1.25rem;
 }
 
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -785,16 +847,16 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .border-b-2 {
@@ -890,8 +952,16 @@ video {
   padding: 1.25rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .p-8 {
   padding: 2rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-4 {
@@ -909,12 +979,31 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
 }
 
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1087,6 +1176,16 @@ video {
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
+.hover\:text-red-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.hover\:text-red-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -1104,6 +1203,16 @@ video {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.hover\:focus\:text-red-500:focus:hover {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.hover\:focus\:text-red-600:focus:hover {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .peer:-moz-placeholder-shown ~ .peer-placeholder-shown\:top-2 {

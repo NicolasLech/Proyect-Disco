@@ -12,50 +12,83 @@
 
   <div class="flex flex-col h-screen">
     <!-- navbar -->
-    <nav class="bg-black/85 p-5 flex justify-between items-center">
-
-        <p class="bg-white text-black font-bold text-3xl p-2 rounded-xl shadow-md shadow-red-500">- KISS -</p>
-        <div>
-            <img src="./assets/Kiss_logo.jpg" alt="Logo" class=" w-[80px] h-[80px] rounded-full">
+    <nav class="bg-black/85 py-3 pl-3 pr-5 flex justify-between items-center">
+      <div>
+        <img src="./assets/Kiss_logo.jpg" alt="Logo" class=" w-[65px] h-[65px] rounded-full">
         </div>
+        <a class="bg-white text-black font-bold text-3xl p-2 rounded-xl shadow-md shadow-red-500" href="login.html">Sign In</a>
+
+        <div id="dropdownButton" class="flex flex-col bg-black rounded-full w-[50px] h-[50px] justify-center">
+
+          <button onclick="toggleDropdown()">
+            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+          </button>
+
+          <ul id="dropdown"
+          class="hidden bg-white p-3">
+            <li>
+              Hola
+            </li>
+          </ul>
+
+        </div>
+        
       
       
     </nav>
     <!-- contenido -->
      <div class="bg-black/50 flex flex-grow flex-col items-center p-4">
-      <p class="text-5xl">ANACHE</p>
-      <img src="/src/assets/logo.png" alt="" class="">
+      <!-- Nombre de la banda -->
+      <h2 class="text-5xl">Kiss</h2>
+      <p>
+
+      </p>
      </div>
      <!-- footer -->
-      <footer class="bg-gray-950/70 p-4">
-        <ul class="text-white text-xl">
+      <footer class="bg-gray-950/70 p-6">
+        <ul class="text-white text-2xl space-y-1 ml-6">
           <li>
-            <a href="https://www.instagram.com/kissonline/?hl=es" target="_blank" class="w-[96px] flex justify-between items-center">
-                <i class="fa-brands fa-instagram mr-2" style="color: #ffffff;"></i>
-                <p>Instagram</p>
-            </a>
-        </li>
-          <li>
-            <a href="https://www.facebook.com/KISS/" target="_blank" class="w-[115px] flex justify-between items-center">
-                <i class="fa-brands fa-facebook-f mr-2" style="color: #ffffff;"></i>
-                <p>Facebook</p>
+            <a href="https://www.instagram.com/kissonline/?hl=es" target="_blank" class="w-[138px] flex items-center hover:text-red-700">
+                <i class="fa-brands fa-instagram mr-2 w-[24px] h-[24px]" style="color: #ffffff;"></i>
+                <span>Instagram</span>
             </a>
           </li>
           <li>
-            <a href="https://x.com/kiss" target="_blank" class="w-[90px] flex justify-between items-center">
-                <i class="fa-brands fa-x-twitter mr-2" style="color: #ffffff;"></i>
-                <p>Twitter</p>
+            <a href="https://www.facebook.com/KISS/" target="_blank" class="w-[133px] flex items-center hover:text-red-700">
+                <i class="fa-brands fa-square-facebook mr-2 w-[24px] h-[24px]" style="color: #ffffff;"></i>
+                <span>Facebook</span>
             </a>
           </li>
           <li>
-            <a href="https://www.youtube.com/@KISS/featured" target="_blank" class="w-[80px] flex justify-between items-center">
-                <i class="fa-brands fa-youtube mr-2" style="color: #ffffff;"></i>
-                <p>YouTube</p>
+            <a href="https://x.com/kiss" target="_blank" class="w-[104px] flex items-center hover:text-red-700">
+                <i class="fa-brands fa-x-twitter mr-2 w-[24px] h-[24px]" style="color: #ffffff;"></i>
+                <span>Twitter</span>
             </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@KISS/featured" target="_blank" class="w-[128px] flex items-center hover:text-red-700">
+              <i class="fa-brands fa-youtube mr-2 w-[24px] h-[24px]" style="color: #ffffff;"></i>
+              <span>Youtuber</span>
+          </a>
           </li>
         </ul>
       </footer>
   </div>
+
+
+  <script>
+    function toggleDropdown(){
+        let dropdown = document.querySelector('#dropdownButton #dropdown');
+        dropdown.classList.toggle("hidden");
+
+
+    }
+
+    
+
+</script>
   
+
+  <script src="./js/app.js" defer></script>
 </body>
 </html>
