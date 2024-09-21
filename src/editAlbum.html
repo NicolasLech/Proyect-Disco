@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AddAlbum</title>
+    <title>EditAlbum</title>
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="icon" type="image/x-icon" href="/src/assets/Favico.Kiss.ico">
 </head>
@@ -43,7 +43,7 @@
     <!-- Formulario principal para agregar álbum -->
     <div class="flex-grow flex justify-center items-center p-8">
         <div class="max-w-lg w-full bg-white p-8 rounded-lg shadow-2xl shadow-red-600">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Agregar Nuevo Álbum</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Editar Álbum</h2>
 
             <form action="/addAlbum" method="POST" class="space-y-6">
                 <!-- Título del álbum -->
@@ -53,23 +53,16 @@
                         class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
                 </div>
 
-                <!-- Año de lanzamiento -->
-                <div>
-                    <label for="year" class="block text-lg font-medium text-gray-700">Año de Lanzamiento</label>
-                    <input type="date" id="year" name="year" placeholder="Ingrese el año de lanzamiento" required
-                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
-                </div>
-
                 <!-- Descripción del álbum -->
                 <div>
                     <label for="description" class="block text-lg font-medium text-gray-700">Descripción</label>
-                    <textarea id="description" name="description" rows="4" placeholder="Ingrese una breve descripción del álbum" required
+                    <textarea id="description" name="description" rows="4" placeholder="Ingrese una breve descripción del álbum actual" required
                         class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
                 </div>
 
-                <!-- URL de la imagen -->
+                <!-- URL de la imagen de portada-->
                 <div>
-                    <label for="image" class="block text-lg font-medium text-gray-700">URL de la Imagen</label>
+                    <label for="image" class="block text-lg font-medium text-gray-700">URL de la Imagen de portada</label>
                     <input type="url" id="image" name="image" placeholder="Ingrese la URL de la imagen del álbum" required
                         class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
                 </div>
@@ -78,7 +71,7 @@
                 <div class="flex justify-center">
                     <button type="submit"
                         class="px-6 py-3 bg-black text-white text-lg font-bold rounded-lg hover:bg-red-600 transition duration-300">
-                        Agregar Álbum
+                        Confirmar
                     </button>
                 </div>
             </form>
@@ -88,4 +81,3 @@
 </body>
 
 </html>
-

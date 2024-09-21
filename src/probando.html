@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alive II</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+     <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body class="bg-[#2c0a27] flex justify-center items-center h-screen m-0">
+
+    <!-- Lista de reproducción -->
+    <div class="flex flex-col gap-5">
+        <div class="bg-[#40103b] p-5 rounded-lg flex items-center text-white w-[600px] justify-between">
+            <div class="flex flex-col mr-5">
+                <h4 class="m-0 text-lg">Detroit Rock City</h4>
+                <span class="text-sm text-gray-400">3:56</span>
+            </div>
+            <audio id="audio1" controls class="w-[300px]">
+                <source src="ruta_a_tu_audio1.mp3" type="audio/mpeg">
+                Tu navegador no soporta este audio.
+            </audio>
+            <button class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded">Eliminar</button>
+        </div>
+
+        <div class="bg-[#40103b] p-5 rounded-lg flex items-center text-white w-[600px] justify-between">
+            <div class="flex flex-col mr-5">
+                <h4 class="m-0 text-lg">Love Gun</h4>
+                <span class="text-sm text-gray-400">3:19</span>
+            </div>
+            <audio id="audio2" controls class="w-[300px]">
+                <source src="ruta_a_tu_audio2.mp3" type="audio/mpeg">
+                Tu navegador no soporta este audio.
+            </audio>
+            <button class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded">Eliminar</button>
+        </div>
+
+        <div class="bg-[#40103b] p-5 rounded-lg flex items-center text-white w-[600px] justify-between">
+            <div class="flex flex-col mr-5">
+                <h4 class="m-0 text-lg">I Want You</h4>
+                <span class="text-sm text-gray-400">3:06</span>
+            </div>
+            <audio id="audio3" controls class="w-[300px]">
+                <source src="ruta_a_tu_audio3.mp3" type="audio/mpeg">
+                Tu navegador no soporta este audio.
+            </audio>
+            <button class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded">Eliminar</button>
+        </div>
+    </div>
+
+</body>
+</html>
