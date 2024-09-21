@@ -1,99 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SideBar</title>
-    <!-- Tailwind -->
-    <link rel="stylesheet" href="./css/estilos.css">
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/12c6af079b.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KISS</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="icon" type="image/x-icon" href="/src/assets/favicon.ico">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/12c6af079b.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-cyan-200/30">
+<body class="bg-gray-900">
+
+  <div class="flex flex-col min-h-screen">
+    <nav class="bg-black/75 py-3 px-5 flex justify-between items-center w-full z-10 shadow-lg">
+      <div>
+        <img src="./assets/Kiss_logo.jpg" alt="Logo" class="w-16 h-16 rounded-full">
+      </div>
+      <ul class="flex space-x-5 text-white text-lg font-light">
+        <li><a href="index.html" class="hover:text-red-500">Inicio</a></li>
+        <li><a href="addAlbum.html" class="hover:text-red-500">AddAlbum</a></li>
+        <li><a href="giras.html" class="hover:text-red-500">Giras</a></li>
+        <li><a href="login.html" class="hover:text-red-500">log out</a></li>
+      </ul>
+      <div class="relative" id="dropdownButton">
+        <button type="button" class="inline-flex items-center justify-center bg-red-500 hover:bg-red-600 text-white rounded-full w-14 h-14" id="menu-button">
+          <img src="/src/assets/user-solid.svg" alt="Perfil" class="h-7 w-6">
+        </button>
+        <div id="dropdown" class="hidden absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white text-gray-700">
+          <a href="#" class="block px-4 py-2 text-sm hover:text-red-600">Perfil</a>
+          <a href="#" class="block px-4 py-2 text-sm hover:text-red-600">Configuraciones</a>
+          <a href="login.html" class="block px-4 py-2 text-sm hover:text-red-600">Sign In</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Contenido -->
     
-    <div class="bg-white w-64 h-screen flex flex-col justify-start">
-
-    <div class="flex-grow">
-
-        
-        <div>
-            <div class="flex items-center border-b-2 border-black">
-                <img src="./assets/logo.png" alt="Chayanne.png" class="w-14 h-14 mx-3 my-3">
-                <span class="text-3xl font-medium">Chayanne</span>
-            </div>
-        </div>
-
-        
-        <div> 
-            <ul>
-                <li>
-                    <a href="#" class="flex items-center mt-3 ml-3 gap-5">
-                        <img src="./assets/icons8-casa-48.png" alt="House">
-                        <span class="text-3xl">Inicio</span>
-                    </a>
-                </li>
-                <li id="dropdownButton">
-
-                    <a href="#"
-                    onclick="toggleDropdown()"
-                    class="flex items-center mt-3 ml-3 gap-5">
-
-                        <img src="./assets/icons8-carpeta-48.png" alt="Folder">
-                            <span class="flex-grow text-3xl">Album</span>
-                        <img src="./assets/icons8-expand-arrow-48.png" alt="Arrow" class="transition-transform" data-row>
-
-                    </a>
-
-                    <ul
-                    id="dropdown"
-                    class="ml-[67px] mr-[81px] border-l border-l-black hidden">
-                        <li>
-                            <a href="#" class="flex pl-3 py-1 hover:bg-gray-950/10">
-                                <span class="text-xl">Sincero</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                </li>
-                <li>
-                    <a href="#" class="flex items-center mt-3 ml-3 gap-5">
-                        <img src="./assets/icons8-agregar-carpeta-48.png" alt="AddFolder">
-                        <span class="text-3xl">AddAlbum</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center mt-3 ml-3 gap-5">
-                        <img src="./assets/icons8-edit-folder-48.png" alt="EditAlbum">
-                        <span class="text-3xl">EditAlbum</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <!-- Cantantes Lado Izquierdo -->
+    <div class="flex flex-col items-center">
+      <div class="">
+        <img src="./Cantantes/paul1.webp" alt="Paul" class="w-64 h-64 rounded-lg shadow-lg">
+        <h2>Paul Stanley</h2>
+      </div>
+      <div>
+        <img src="./Cantantes/gene2.webp" alt="Gene" class="w-64 h-64 rounded-lg shadow-lg">
+        <h2>Gene Simmons</h2>
+      </div>
     </div>
 
-        <div>
-            <a href="#" class="flex items-center my-3 mx-10 gap-3">
-                <img src="./assets/icons8-accede-redondeado-derecho-48.png" alt="Login">
-                <span class="text-3xl">Login</span>
-            </a>
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-4 py-[108.5px] space-y-10 text-white">
+      <h1 class="text-6xl font-bold">Kiss</h1>
+      <p class="text-lg max-w-3xl leading-relaxed">
+        KISS es una icónica banda de rock estadounidense formada en Nueva York en 1973 por Paul Stanley, Gene Simmons, Peter Criss y Ace Frehley. Son conocidos por su estilo teatral, que incluye maquillaje facial distintivo y trajes llamativos, lo que los convirtió en una de las bandas más visualmente reconocibles de la historia del rock.
+      </p>
+      
+      <!-- Albums De la banda -->
+      <div class="flex space-x-10 justify-center">
+        <div class="text-center transform transition-transform duration-300 hover:scale-105 bg-orange-600 p-3">
+          <a href="Alive2.html">
+            <img src="./Canciones/Alive 2/Alive 2.jpg" alt="Alive 2" class="w-64 h-64 rounded-lg shadow-lg">
+            <h1 class="text-2xl font-bold text-white mt-4">Alive II</h1>
+            <h2 class="text-lg text-gray-400">1977</h2>
+          </a>
         </div>
+        <div class="text-center transform transition-transform duration-300 hover:scale-105 bg-orange-600 p-3">
+          <img src="./Canciones/Rock and Roll Over/Rock_and_roll_over.jpg" alt="Rock and Roll Over" class="w-64 h-64 rounded-lg shadow-lg">
+          <h1 class="text-2xl font-bold text-white mt-4">Rock and Roll Over</h1>
+          <h2 class="text-lg text-gray-400">1976</h2>
+        </div>
+        <div class="text-center transform transition-transform duration-300 hover:scale-105 bg-orange-600 p-3">
+          <img src="./Canciones/Creatures of the Night/COTN_album_cover.jpg" alt="Creatures of the Night" class="w-64 h-64 rounded-lg shadow-lg">
+          <h1 class="text-2xl font-bold text-white mt-4">Creatures of the Night</h1>
+          <h2 class="text-lg text-gray-400">1982</h2>
+        </div>
+      </div>
+    </main>
+    
 
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="contenedor">
+        <h2 class="SocialNet">Social Networks</h2>
+        <div class="flex-center-space">
+          <a target="_blank" href="https://www.instagram.com/kissonline/?hl=es">
+            <i class="fa-brands fa-instagram icon"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/kiss?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <i class="fa-brands fa-square-x-twitter icon"></i>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/KISS/?locale=es_LA">
+            <i class="fa-brands fa-square-facebook icon"></i>
+          </a>
+          <a target="_blank" href="https://www.youtube.com/@KISS/featured">
+            <i class="fa-brands fa-youtube icon"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
 
+  <script>
+    function toggleDropdown() {
+      let dropdown = document.getElementById('dropdown');
+      dropdown.classList.toggle("hidden");
+    }
 
-    <script>
-        function toggleDropdown(){
-            let dropdown = document.querySelector('#dropdownButton #dropdown');
-            dropdown.classList.toggle("hidden");
+    document.getElementById('menu-button').addEventListener('click', toggleDropdown);
+  </script>
 
-
-        }
-
-        
-
-    </script>
-
-
-    <script src="./js/app.js" defer></script>
 </body>
 </html>
+

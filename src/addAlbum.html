@@ -1,51 +1,55 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproductor de Audio</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>AddAlbum</title>
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
-<body>
-    <div class="audio-container">
-        <div class="audio-player">
-            <div class="audio-info">
-                <h4>Live Forever</h4>
-                <span class="duration">4:36</span>
-            </div>
-            <audio id="audio1" controls>
-                <source src="ruta_a_tu_audio1.mp3" type="audio/mpeg">
-                Tu navegador no soporta este audio.
-            </audio>
-            <button class="delete-btn">Eliminar</button>
-        </div>
+<body class="bg-black/85">
 
-        <div class="audio-player">
-            <div class="audio-info">
-                <h4>Another Song</h4>
-                <span class="duration">3:50</span>
-            </div>
-            <audio id="audio2" controls>
-                <source src="ruta_a_tu_audio2.mp3" type="audio/mpeg">
-                Tu navegador no soporta este audio.
-            </audio>
-            <button class="delete-btn">Eliminar</button>
-        </div>
-
-        <div class="audio-player">
-            <div class="audio-info">
-                <h4>Final Track</h4>
-                <span class="duration">5:12</span>
-            </div>
-            <audio id="audio3" controls>
-                <source src="ruta_a_tu_audio3.mp3" type="audio/mpeg">
-                Tu navegador no soporta este audio.
-            </audio>
-            <button class="delete-btn">Eliminar</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+    <!-- Formulario para agregar un álbum -->
+<div class="max-w-lg mx-auto mt-10 bg-white p-8 rounded-lg shadow-2xl shadow-red-600">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Agregar Nuevo Álbum</h2>
+  
+    <form action="/addAlbum" method="POST" class="space-y-6">
+      <!-- Título del álbum -->
+      <div>
+        <label for="title" class="block text-lg font-medium text-gray-700">Título del Álbum</label>
+        <input type="text" id="title" name="title" placeholder="Ingrese el título del álbum" required
+          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+      </div>
+  
+      <!-- Año de lanzamiento -->
+      <div>
+        <label for="year" class="block text-lg font-medium text-gray-700">Año de Lanzamiento</label>
+        <input type="date" id="year" name="year" placeholder="Ingrese el año de lanzamiento" required
+          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+      </div>
+  
+      <!-- Descripción del álbum -->
+      <div>
+        <label for="description" class="block text-lg font-medium text-gray-700">Descripción</label>
+        <textarea id="description" name="description" rows="4" placeholder="Ingrese una breve descripción del álbum" required
+          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
+      </div>
+  
+      <!-- URL de la imagen -->
+      <div>
+        <label for="image" class="block text-lg font-medium text-gray-700">URL de la Imagen</label>
+        <input type="url" id="image" name="image" placeholder="Ingrese la URL de la imagen del álbum" required
+          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+      </div>
+  
+      <!-- Botón de envío -->
+      <div class="flex justify-center">
+        <button type="submit" class="px-6 py-3 bg-black text-white text-lg font-bold rounded-lg hover:bg-red-600 transition duration-300">
+          Agregar Álbum
+        </button>
+      </div>
+    </form>
+  </div>
+  
+    
 </body>
 </html>
-
