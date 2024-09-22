@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Uso de css en el proyecto */
 @layer components{
 
     .footer{

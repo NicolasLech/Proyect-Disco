@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock and Roll Over</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="./assets/Favico.Kiss.ico">
+</head>
+
+<body class="bg-gray-900 text-white flex">
+
+    <!-- Sidebar -->
+    <div class="w-64 bg-gray-800 p-6 flex flex-col justify-between h-screen border-r-4 border-red-500">
+        <!-- Parte superior con usuario e ícono de la banda -->
+        <div>
+            <div class="mb-10 text-center border-b pb-4 border-gray-600">
+                <img src="./assets/foto relacionada con la banda.jfif" alt="Banda Icono" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-red-500">
+                <h2 class="text-xl font-semibold text-red-500">Lancelot</h2>
+            </div>
+
+            <!-- Secciones de navegación -->
+            <div class="space-y-6">
+                <a href="index.html" class="block py-2 text-lg hover:bg-red-600 rounded-lg text-center bg-gray-700">Other Albums</a>
+                <a href="editAlbum.html" class="block py-2 text-lg hover:bg-red-600 rounded-lg text-center bg-gray-700">Edit Album</a>
+                <a href="addSongs.html" class="block py-2 text-lg hover:bg-red-600 rounded-lg text-center bg-gray-700">Add Songs</a>
+            </div>
+        </div>
+
+        <!-- Log out abajo del todo -->
+        <div>
+            <a href="login.html" class="block py-2 text-lg hover:bg-red-600 rounded-lg text-center bg-gray-700">Log out</a>
+        </div>
+    </div>
+
+    <!-- Lista de reproducción -->
+    <div class="flex-1 flex flex-col justify-center items-center p-6 bg-gray-800">
+        <!-- Titulo de la cancion -->
+        <div class="mb-8 text-center">
+            <h1 class="text-4xl font-bold text-red-500 mb-4">Rock and Roll Over</h1>
+            <p class="text-gray-400 max-w-3xl text-lg">"Rock and Roll Over" es el quinto álbum de KISS, lanzado en 1976. Con un sonido más crudo que su predecesor, incluye clásicos como "Hard Luck Woman" y "Calling Dr. Love". Destaca por su energía y un enfoque más sencillo en su producción, representando el hard rock característico de la banda. Fue certificado disco de oro en 1977 y doble platino en 1996 por vender más de dos millones de copias.</p>
+        </div>
+        
+        <!-- Album de spotify -->
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6722nY178mLes49GPldnjj?utm_source=generator" width="50%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+</body>
+
+</html>

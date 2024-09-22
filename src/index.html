@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KISS</title>
+  <title>Inicio</title>
   <link rel="stylesheet" href="./css/estilos.css">
-  <link rel="icon" type="image/x-icon" href="/src/assets/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./assets/Favico.Kiss.ico">
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/12c6af079b.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="bg-gray-900">
 
   <div class="flex flex-col min-h-screen">
@@ -24,7 +26,8 @@
       </ul>
       <div class="relative" id="dropdownButton">
         <button type="button" class="inline-flex items-center justify-center bg-red-500 hover:bg-red-600 text-white rounded-full w-14 h-14" id="menu-button">
-          <img src="/src/assets/user-solid.svg" alt="Perfil" class="h-7 w-6">
+          <!-- <img src="/src/assets/user-solid.svg" alt="Perfil" class="h-7 w-6"> -->
+          <i class="fa-solid fa-user text-2xl" style="color: #ffffff;"></i>
         </button>
         <div id="dropdown" class="hidden absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white text-gray-700">
           <a href="#" class="block px-4 py-2 text-sm hover:text-red-600">Perfil</a>
@@ -33,19 +36,6 @@
         </div>
       </div>
     </nav>
-    <!-- Contenido -->
-    
-    <!-- Cantantes --> 
-    <!-- <div class="flex flex-col space-y-6 text-white mx-6">
-      <div>
-        <img src="./Cantantes/paul1.webp" alt="Paul" class="w-64 h-64 rounded-lg shadow-lg">
-        <h2 class="w-64 text-center p-2">Paul Stanley</h2>
-      </div>
-      <div>
-        <img src="./Cantantes/gene2.webp" alt="Gene" class="w-64 h-64 rounded-lg shadow-lg">
-        <h2 class="w-64 text-center p-2">Gene Simmons</h2>
-      </div>
-    </div> -->
 
     <main class="flex-grow flex flex-col items-center justify-center text-center px-4 pt-[50px] pb-[100px] space-y-10 text-white">
       <h1 class="text-6xl font-bold">Kiss</h1>
@@ -56,40 +46,43 @@
       <h2 class="text-4xl">Albums</h2>
       
       <!-- Albums De la banda -->
-      <div class="flex space-x-10 justify-center">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-center">
         <div class="text-center transform transition-transform duration-300 hover:scale-105 bg-orange-600 p-3">
-          <a href="Alive2.html">
-            <img src="./Canciones/Alive 2/Alive 2.jpg" alt="Alive 2" class="w-64 h-64 rounded-lg shadow-lg">
+          <a href="alive II.html">
+            <img src="./Canciones/Alive 2/Alive 2.jpg" alt="Alive 2" class="w-64 h-64 rounded-lg shadow-lg mx-auto">
             <h1 class="text-2xl font-bold text-white mt-4">Alive II</h1>
             <h2 class="text-lg text-gray-400">1977</h2>
           </a>
         </div>
         <div class="text-center transform transition-transform duration-300 hover:scale-105 bg-orange-600 p-3">
-          <img src="./Canciones/Rock and Roll Over/Rock_and_roll_over.jpg" alt="Rock and Roll Over" class="w-64 h-64 rounded-lg shadow-lg">
-          <h1 class="text-2xl font-bold text-white mt-4">Rock and Roll Over</h1>
-          <h2 class="text-lg text-gray-400">1976</h2>
+          <a href="Rock and Roll Over.html">
+            <img src="./Canciones/Rock and Roll Over/Rock_and_roll_over.jpg" alt="Rock and Roll Over" class="w-64 h-64 rounded-lg shadow-lg mx-auto">
+            <h1 class="text-2xl font-bold text-white mt-4">Rock and Roll Over</h1>
+            <h2 class="text-lg text-gray-400">1976</h2>
+          </a>
         </div>
         <div class="text-center transform transition-transform duration-300 hover:scale-105 bg-orange-600 p-3">
-          <img src="./Canciones/Creatures of the Night/COTN_album_cover.jpg" alt="Creatures of the Night" class="w-64 h-64 rounded-lg shadow-lg">
-          <h1 class="text-2xl font-bold text-white mt-4">Creatures of the Night</h1>
-          <h2 class="text-lg text-gray-400">1982</h2>
+          <a href="">
+            <img src="./Canciones/Creatures of the Night/COTN_album_cover.jpg" alt="Creatures of the Night" class="w-64 h-64 rounded-lg shadow-lg mx-auto">
+            <h1 class="text-2xl font-bold text-white mt-4">Creatures of the Night</h1>
+            <h2 class="text-lg text-gray-400">1982</h2>
+          </a>
         </div>
       </div>
 
       <h2 class="text-4xl">Fotos de la banda</h2>
-      <div class="flex space-x-10 justify-center">
-        <img src="./assets/kiss1.webp" alt="" class="w-[550px] h-[550px] rounded-lg shadow-lg">
-        <img src="./assets/kiss2.jpg" alt="" class="w-[550px] h-[550px] rounded-lg shadow-lg">
-        <img src="./assets/kiss3.png" alt="" class="w-[550px] h-[550px] rounded-lg shadow-lg">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-center">
+        <img src="./assets/kiss1.webp" alt="" class="w-[500px] h-[400px] rounded-lg shadow-lg">
+        <img src="./assets/kiss2.jpg" alt="" class="w-[500px] h-[400px] rounded-lg shadow-lg">
+        <img src="./assets/kiss3.png" alt="" class="w-[500px] h-[400px] rounded-lg shadow-lg">
       </div>
     </main>
-    
 
     <!-- Footer -->
     <footer class="footer">
       <div class="contenedor">
         <h2 class="SocialNet">Social Networks</h2>
-        <div class="flex-center-space">
+        <div class="flex justify-center space-x-5">
           <a target="_blank" href="https://www.instagram.com/kissonline/?hl=es">
             <i class="fa-brands fa-instagram icon"></i>
           </a>
@@ -118,4 +111,5 @@
 
 </body>
 </html>
+
 
