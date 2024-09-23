@@ -14,6 +14,7 @@
 <body class="bg-gray-900">
 
   <div class="flex flex-col min-h-screen">
+    <!-- navbar -->
     <nav class="bg-black/75 py-3 px-5 flex justify-between items-center w-full z-10 shadow-lg">
       <div>
         <img src="./assets/Kiss_logo.jpg" alt="Logo" class="w-16 h-16 rounded-full">
@@ -26,7 +27,6 @@
       </ul>
       <div class="relative" id="dropdownButton">
         <button type="button" class="inline-flex items-center justify-center bg-red-500 hover:bg-red-600 text-white rounded-full w-14 h-14" id="menu-button">
-          <!-- <img src="/src/assets/user-solid.svg" alt="Perfil" class="h-7 w-6"> -->
           <i class="fa-solid fa-user text-2xl" style="color: #ffffff;"></i>
         </button>
         <div id="dropdown" class="hidden absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white text-gray-700">
@@ -37,12 +37,14 @@
       </div>
     </nav>
 
+    <!-- Nombre y info de la banda -->
     <main class="flex-grow flex flex-col items-center justify-center text-center px-4 pt-[50px] pb-[100px] space-y-10 text-white">
       <h1 class="text-6xl font-bold">Kiss</h1>
       <p class="text-lg max-w-3xl leading-relaxed">
         KISS es una icónica banda de rock estadounidense formada en Nueva York en 1973 por Paul Stanley, Gene Simmons, Peter Criss y Ace Frehley. Son conocidos por su estilo teatral, que incluye maquillaje facial distintivo y trajes llamativos, lo que los convirtió en una de las bandas más visualmente reconocibles de la historia del rock.
       </p>
 
+      <!-- Titulo albums -->
       <h2 class="text-4xl">Albums</h2>
       
       <!-- Albums De la banda -->
@@ -69,7 +71,7 @@
           </a>
         </div>
       </div>
-
+      <!-- Fotos de la banda -->
       <h2 class="text-4xl">Fotos de la banda</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-center">
         <img src="./assets/kiss1.webp" alt="" class="w-[500px] h-[400px] rounded-lg shadow-lg">
@@ -100,6 +102,8 @@
     </footer>
   </div>
 
+
+  <!-- script del menu desplegable -->
   <script>
     function toggleDropdown() {
       let dropdown = document.getElementById('dropdown');
