@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AddSongs</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/Favico.Kiss.ico">
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="bg-gray-900 text-white flex min-h-screen">
@@ -39,7 +42,7 @@
         <div class="max-w-lg w-full bg-gray-700 p-8 rounded-lg shadow-2xl border-2 border-red-500">
             <h2 class="text-3xl font-bold text-red-500 mb-6 text-center">Añadir Canción</h2>
 
-            <form action="/addAlbum" method="POST" class="space-y-6">
+            <form id="addSongForm" action="/addAlbum" method="POST" class="space-y-6" onsubmit="return validateForm(event)">
                 <!-- Título de la canción -->
                 <div>
                     <label for="title" class="block text-lg font-medium text-white">Título de la Canción</label>
@@ -72,6 +75,61 @@
         </div>
     </div>
 
+    <script>
+        function validateForm(event) {
+            event.preventDefault();  // Evitar el envío automático del formulario
+            
+            const title = document.getElementById('title').value.trim();
+            const duration = document.getElementById('duration').value.trim();
+            const url = document.getElementById('url').value.trim();
+
+            // Validar título
+            if (title === "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error en el título',
+                    text: 'Por favor, ingrese el título de la canción.',
+                });
+                return false;
+            }
+
+            // Validar duración (mm:ss)
+            const durationRegex = /^[0-9]{1,2}:[0-5][0-9]$/;
+            if (!durationRegex.test(duration)) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error en la duración',
+                    text: 'La duración debe estar en formato mm:ss.',
+                });
+                return false;
+            }
+
+            // Validar URL (YouTube o Spotify)
+            const urlRegex = /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be|spotify\.com)\/.+$/;
+            if (!urlRegex.test(url)) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error en la URL',
+                    text: 'Ingrese una URL válida de YouTube o Spotify.',
+                });
+                return false;
+            }
+
+            // Si todo está bien, mostrar alerta de éxito y enviar el formulario
+            Swal.fire({
+                icon: 'success',
+                title: 'Canción agregada exitosamente',
+                showConfirmButton: false,
+                timer: 1500
+            }).then(() => {
+                document.getElementById('addSongForm').submit();  // Enviar el formulario después de la alerta de éxito
+            });
+
+            return true;
+        }
+    </script>
 </body>
 
 </html>
+
+

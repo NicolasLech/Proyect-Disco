@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SingUp</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/Favico.Kiss.ico">
 </head>
 
@@ -21,102 +22,100 @@
             </p>
             <!-- Formulario -->
             <form method="get" action="index.html" class="space-y-6">
-                <div class="grid grid-flow-row sm:grid-flow-col gap-3">
-                  <div class="relative">
-                    <input
-                      placeholder="Username"
+              <div class="relative">
+                  <input
+                      placeholder="First Name"
                       class="peer h-10 w-full border-b-2 border-gray-300 text-black bg-transparent placeholder-transparent focus:outline-none focus:border-red-500"
                       required=""
-                      id="usuario"
-                      name="usuario"
+                      id="FirstName"
+                      name="FirstName"
                       type="text"
-                    />
-                    <label
+                  />
+                  <label
                       class="absolute left-0 -top-3.5 text-black text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-red-500 peer-focus:text-sm"
-                      for="usuario"
-                      >FirstName</label
-                    >
-                  </div>
-                  <div class="relative">
-                    <input
-                      placeholder="LastName"
+                      for="FirstName"
+                      >First Name</label
+                  >
+              </div>
+              <div class="relative">
+                  <input
+                      placeholder="Last Name"
                       class="peer h-10 w-full border-b-2 border-gray-300 text-black bg-transparent placeholder-transparent focus:outline-none focus:border-red-500"
                       required=""
                       id="LastName"
                       name="LastName"
                       type="text"
-                    />
-                    <label
-                      class="absolute left-0 -top-3.5 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-red-500 peer-focus:text-sm"
-                      for="LastName"
-                      >LastName</label
-                    >
-                  </div>
-                </div>
-                <div class="relative">
-                  <input
-                    placeholder="Username"
-                    class="peer h-10 w-full border-b-2 border-gray-300 text-black bg-transparent placeholder-transparent focus:outline-none focus:border-red-500"
-                    required=""
-                    id="Username"
-                    name="Username"
-                    type="text"
                   />
                   <label
-                    class="absolute left-0 -top-3.5 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-red-500 peer-focus:text-sm"
-                    for="Username"
-                    >Username</label
+                      class="absolute left-0 -top-3.5 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-red-500 peer-focus:text-sm"
+                      for="LastName"
+                      >Last Name</label
                   >
-                </div>
-                <div class="grid grid-flow-row sm:grid-flow-col gap-3">
-                  <div class="relative">
-                    <input
+              </div>
+              <div class="relative">
+                  <input
+                      placeholder="Username"
+                      class="peer h-10 w-full border-b-2 border-gray-300 text-black bg-transparent placeholder-transparent focus:outline-none focus:border-red-500"
+                      required=""
+                      id="Username"
+                      name="Username"
+                      type="text"
+                  />
+                  <label
+                      class="absolute left-0 -top-3.5 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-red-500 peer-focus:text-sm"
+                      for="Username"
+                      >Username</label
+                  >
+              </div>
+              <div class="relative">
+                  <input
                       placeholder="Email"
                       class="peer h-10 w-full border-b-2 border-gray-300 text-black bg-transparent placeholder-transparent focus:outline-none focus:border-red-500"
                       required=""
                       id="email"
                       name="email"
                       type="email"
-                    />
-                    <label
-                      class="absolute left-0 -top-3.5 text-black text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-red-500 peer-focus:text-sm"
+                  />
+                  <label
+                      class="absolute left-0 -top-3.5 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-red-500 peer-focus:text-sm"
                       for="email"
                       >Email</label
-                    >
-                  </div>
-                  <div class="relative">
-                    <input
+                  >
+              </div>
+              <div class="relative">
+                  <input
                       placeholder="Password"
                       class="peer h-10 w-full border-b-2 border-gray-300 text-black bg-transparent placeholder-transparent focus:outline-none focus:border-red-500"
                       required=""
                       id="password"
                       name="password"
                       type="password"
-                    />
-                    <label
+                  />
+                  <label
                       class="absolute left-0 -top-3.5 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-red-500 peer-focus:text-sm"
                       for="password"
                       >Password</label
-                    >
-                  </div>
-                </div>
-                <div class="flex items-center justify-between">
-                    <label class="flex items-center text-sm text-gray-600">
+                  >
+              </div>
+              <div class="flex items-center justify-between">
+                  <label class="flex items-center text-sm text-gray-600">
                       <input
-                        class="form-checkbox h-4 w-4 bg-gray-800 border-gray-300 rounded"
-                        type="checkbox"
-                        required
+                          class="form-checkbox h-4 w-4 bg-gray-800 border-gray-300 rounded"
+                          type="checkbox"
+                          required
                       />
                       <span class="ml-2"><a href="#" class="hover:underline text-red-500">Accept terms of use</a></span>
-                  </div>
-                  <!-- Boton para crear la cuenta -->
-                  <button
-          class="w-full py-2 px-4 bg-black hover:bg-red-500 rounded-md shadow-lg text-white font-semibold transition duration-200"
-          type="submit"
-        >
-          Create Account
-        </button>
-            </form>
+                  </label>
+              </div>
+              <!-- Botón para crear la cuenta -->
+              <button
+                  class="w-full py-2 px-4 bg-black hover:bg-red-500 rounded-md shadow-lg text-white font-semibold transition duration-200"
+                  type="submit"
+              >
+                  Create Account
+              </button>
+          </form>
+          
             <!-- Boton para loguearse si ya posee una cuenta -->
             <div class="text-center text-gray-600">
                 Already have an acount ?

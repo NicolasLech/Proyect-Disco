@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EditAlbum</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="icon" type="image/x-icon" href="./assets/Favico.Kiss.ico">
+    <!-- SweetAlert CSS/JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="bg-gray-900 text-white flex min-h-screen">
@@ -39,7 +41,7 @@
         <div class="max-w-lg w-full bg-gray-700 p-8 rounded-lg shadow-2xl border-2 border-red-500">
             <h2 class="text-3xl font-bold text-red-500 mb-6 text-center">Editar Álbum</h2>
 
-            <form action="/addAlbum" method="POST" class="space-y-6">
+            <form id="albumForm" class="space-y-6">
                 <!-- Título del álbum -->
                 <div>
                     <label for="title" class="block text-lg font-medium text-white">Título del Álbum</label>
@@ -72,6 +74,14 @@
         </div>
     </div>
 
+    <!-- Script de validación -->
+    <script src="./js/editalbum.js"></script>
+
 </body>
 
 </html>
+
+
+
+
+

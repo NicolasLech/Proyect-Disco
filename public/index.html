@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/Favico.Kiss.ico">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/12c6af079b.js" crossorigin="anonymous"></script>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900">
+
+  <div class="flex flex-col min-h-screen">
+    <!-- Navbar -->
+<nav class="bg-black/75 py-3 px-5 flex justify-between items-center w-full z-10 shadow-lg">
+    <div>
+      <img src="./assets/Kiss_logo.jpg" alt="Logo" class="w-12 h-12 md:w-16 md:h-16 rounded-full">
+    </div>
+  
+    <!-- Navegacion de la navbar -->
+    <ul class="flex space-x-5 text-white text-lg font-light">
+      <li><a href="index.html" class="hover:text-orange-500">Inicio</a></li>
+      <li><a href="addAlbum.html" class="hover:text-orange-500">Add Album</a></li>
+      <li><a href="giras.html" class="hover:text-orange-500">Giras</a></li>
+    </ul>
+  
+    <!-- Dropdown del perfil de usuario para pantallas Grandes -->
+    <div class="hidden md:block relative" id="desktop-dropdown-button">
+      <button type="button" class="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white rounded-full w-12 h-12" id="desktop-menu-button">
+        <i class="fa-solid fa-user text-xl" style="color: #ffffff;"></i>
+      </button>
+      <div id="desktop-dropdown" class="hidden absolute right-0 mt-2 w-28 rounded-md shadow-lg bg-white text-gray-700">
+        <!-- Menú desplegable para pantallas Grandes -->
+        <ul>
+          <li><a href="#" class="block px-4 py-2 text-sm hover:text-orange-600 text-center border-b border-black/50">Profile</a></li>
+          <li><a href="#" class="block px-4 py-2 text-sm hover:text-orange-600 text-center border-b border-black/50">Settings</a></li>
+          <li><a href="#" class="block px-4 py-2 text-sm hover:text-orange-600 text-center border-b border-black/50">Support</a></li>
+          <li><a href="index.html" class="block px-4 py-2 text-sm hover:text-orange-600 text-center border-b border-black/50">Log out</a></li>
+          <li><a href="login.html" class="block px-4 py-2 text-sm hover:text-orange-600 text-center">Sign In</a></li>
+        </ul>  
+      </div>
+    </div>
+  
+    <!-- Dropdown del perfil de usuario para pantallas pequeñas -->
+    <div class="md:hidden relative">
+      <button id="mobile-menu-button" class="text-white">
+        <i class="fa-solid fa-bars text-2xl" style="color: #f97316;"></i>
+      </button>
+      <!-- Menú desplegable para pantallas pequeñas -->
+      <ul id="mobile-menu" class="hidden absolute right-0 mt-2 bg-white  py-4 rounded-lg shadow-lg w-48 space-y-2 text-center">
+        <li><a href="#" class="block px-4 py-2 text-sm hover:text-orange-600 border-b border-black/50">Profile</a></li>
+        <li><a href="#" class="block px-4 py-2 text-sm hover:text-orange-600 border-b border-black/50">Settings</a></li>
+        <li><a href="#" class="block px-4 py-2 text-sm hover:text-orange-600 border-b border-black/50">Support</a></li>
+        <li><a href="index.html" class="block px-4 py-2 text-sm hover:text-orange-600 text-center border-b border-black/50">Log out</a></li>
+        <li><a href="login.html" class="block px-4 py-2 text-sm hover:text-orange-600">Sign In</a></li>
+      </ul>
+    </div>
+    
+  </nav>
+  
+
+    <!-- Nombre e Información de la Banda -->
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-4 pt-10 pb-20 space-y-10 text-white">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold">Kiss</h1>
+      <p class="text-base sm:text-lg max-w-3xl leading-relaxed">
+        KISS es una icónica banda de rock estadounidense formada en Nueva York en 1973 por Paul Stanley, Gene Simmons, Peter Criss y Ace Frehley. Son conocidos por su estilo teatral, que incluye maquillaje facial distintivo y trajes llamativos, lo que los convirtió en una de las bandas más visualmente reconocibles de la historia del rock.
+      </p>
+
+      <!-- Título Albums -->
+      <h2 class="text-3xl sm:text-4xl">Albums</h2>
+
+      <!-- Álbumes de la Banda -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 justify-center">
+        <div class="text-center transform transition-transform duration-300 hover:scale-105 bg-orange-600 p-3 rounded-lg">
+          <a href="alive II.html">
+            <img src="./Canciones/Alive 2/Alive 2.jpg" alt="Alive 2" class="w-48 h-48 sm:w-64 sm:h-64 rounded-lg shadow-lg mx-auto">
+            <h1 class="text-xl sm:text-2xl font-bold text-white mt-4">Alive II</h1>
+            <h2 class="text-md sm:text-lg text-gray-400">1977</h2>
+          </a>
+          <i class="fa-solid fa-star text-white text-3xl mt-2 cursor-pointer star-icon fixed bottom-[305px] left-[14px]"></i>
+        </div>
+        
+        <div class="text-center transform transition-transform duration-300 hover:scale-105 bg-orange-600 p-3 rounded-lg">
+          <a href="Rock and Roll Over.html">
+            <img src="./Canciones/Rock and Roll Over/Rock_and_roll_over.jpg" alt="Rock and Roll Over" class="w-48 h-48 sm:w-64 sm:h-64 rounded-lg shadow-lg mx-auto">
+            <h1 class="text-xl sm:text-2xl font-bold text-white mt-4">Rock and Roll Over</h1>
+            <h2 class="text-md sm:text-lg text-gray-400">1976</h2>
+          </a>
+          <i class="fa-solid fa-star text-white text-3xl mt-2 cursor-pointer star-icon fixed bottom-[305px] left-[18px]"></i>
+        </div>
+      
+        <div class="text-center transform transition-transform duration-300 hover:scale-105 bg-orange-600 p-3 rounded-lg">
+          <a href="">
+            <img src="./Canciones/Creatures of the Night/COTN_album_cover.jpg" alt="Creatures of the Night" class="w-48 h-48 sm:w-64 sm:h-64 rounded-lg shadow-lg mx-auto">
+            <h1 class="text-xl sm:text-2xl font-bold text-white mt-4">Creatures of the Night</h1>
+            <h2 class="text-md sm:text-lg text-gray-400">1982</h2>
+          </a>
+          <i class="fa-solid fa-star text-white text-3xl mt-2 cursor-pointer star-icon fixed bottom-[305px] left-[14px]"></i>
+        </div>
+      </div>
+      
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black/75 text-white py-8">
+      <div class="text-center">
+        <h3 class="text-xl md:text-2xl mb-4">Social Network</h3>
+        <div class="flex items-center justify-center space-x-6">
+          <a target="_blank" href="https://www.instagram.com/kissonline/?hl=es">
+            <i class="fa-brands fa-instagram text-3xl md:text-4xl hover:text-orange-500 icon"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/kiss?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <i class="fa-brands fa-square-x-twitter text-3xl md:text-4xl hover:text-orange-500 icon"></i>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/KISS/?locale=es_LA">
+            <i class="fa-brands fa-square-facebook text-3xl md:text-4xl hover:text-orange-500 icon"></i>
+          </a>
+          <a target="_blank" href="https://www.youtube.com/@KISS/featured">
+            <i class="fa-brands fa-youtube text-3xl md:text-4xl hover:text-orange-500 icon"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Script para los menús desplegables y la funcionalidad de las estrellas -->
+  <script>
+    // Menú móvil
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Dropdown para pantallas grandes
+    const desktopMenuButton = document.getElementById('desktop-menu-button');
+    const desktopDropdown = document.getElementById('desktop-dropdown');
+    desktopMenuButton.addEventListener('click', () => {
+      desktopDropdown.classList.toggle('hidden');
+    });
+
+    // Funcionalidad de las estrellas
+    const starIcons = document.querySelectorAll('.star-icon');
+    starIcons.forEach(icon => {
+      icon.addEventListener('click', () => {
+        icon.classList.toggle('text-yellow-500'); // Cambia el color de la estrella
+      });
+    });
+  </script>
+</body>
+
+</html>
+
+
